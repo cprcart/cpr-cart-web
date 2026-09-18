@@ -1,0 +1,1726 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CPR Cart LLC | AHA HeartCode® CPR Certification &amp; Renewal</title>
+
+  <!-- SEO & Social Meta -->
+  <meta name="description" content="Earn or renew your official AHA BLS, ACLS, or PALS eCard with CPR Cart LLC. Complete your online HeartCode® module from home, then finish a quick ~30-minute skills check on an automated CPR Cart system.">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="CPR Cart LLC | AHA HeartCode® CPR Certification">
+  <meta property="og:description" content="Flexible AHA HeartCode® training combining online modules at home with an automated ~30-minute hands-on skills session.">
+  <meta property="og:type" content="website">
+
+  <style>
+    /* ==========================================================================
+       CSS Variables & Lifesaver Glow Theme
+       ========================================================================== */
+    :root {
+      --bg-navy-950: #040914;
+      --bg-navy-900: #071126;
+      --bg-navy-800: #0d1e3d;
+      --bg-navy-700: #142850;
+      --bg-card: rgba(13, 30, 61, 0.75);
+      --red-vibrant: #ff2a44;
+      --red-glow: rgba(255, 42, 68, 0.4);
+      --red-soft: #ff4d63;
+      --blue-neon: #00d2ff;
+      --blue-glow: rgba(0, 210, 255, 0.35);
+      --blue-subtle: #38bdf8;
+      --text-pure: #ffffff;
+      --text-soft: #f8fafc;
+      --text-light: #e2e8f0;
+      --text-muted: #94a3b8;
+      --border-glass: rgba(255, 255, 255, 0.08);
+      --border-blue: rgba(0, 210, 255, 0.3);
+      --border-red: rgba(255, 42, 68, 0.3);
+      --font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      --max-width: 1200px;
+      --radius-sm: 8px;
+      --radius-md: 16px;
+      --radius-lg: 24px;
+      --shadow-elevation: 0 12px 35px -8px rgba(0, 0, 0, 0.6);
+      --transition: all 0.28s ease-in-out;
+    }
+
+    /* Reset & Base Styles */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+      background-color: var(--bg-navy-950);
+      color: var(--text-pure);
+      font-family: var(--font-family);
+      line-height: 1.6;
+    }
+
+    body {
+      overflow-x: hidden;
+      background-color: var(--bg-navy-950);
+      background-image: 
+        radial-gradient(circle at 15% 15%, rgba(0, 210, 255, 0.06) 0%, transparent 45%),
+        radial-gradient(circle at 85% 85%, rgba(255, 42, 68, 0.06) 0%, transparent 45%),
+        linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+      background-size: 100% 100%, 100% 100%, 45px 45px, 45px 45px;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      transition: var(--transition);
+    }
+
+    .container {
+      width: 100%;
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    .section-padding {
+      padding: 6rem 0;
+    }
+
+    /* Lifesaver Badges */
+    .glow-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.4rem 1.1rem;
+      background: rgba(255, 42, 68, 0.12);
+      border: 1px solid var(--border-red);
+      border-radius: 9999px;
+      color: var(--red-soft);
+      font-size: 0.825rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      box-shadow: 0 0 16px var(--red-glow);
+      margin-bottom: 1.25rem;
+    }
+
+    .glow-badge.blue {
+      background: rgba(0, 210, 255, 0.1);
+      border-color: var(--border-blue);
+      color: var(--blue-neon);
+      box-shadow: 0 0 16px var(--blue-glow);
+    }
+
+    .section-header {
+      text-align: center;
+      max-width: 780px;
+      margin: 0 auto 3.75rem;
+    }
+
+    .section-title {
+      font-size: 2.35rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+      margin-bottom: 1rem;
+      color: var(--text-pure);
+    }
+
+    .section-subtitle {
+      color: var(--text-muted);
+      font-size: 1.075rem;
+      line-height: 1.7;
+    }
+
+    /* Buttons */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.65rem;
+      padding: 0.95rem 1.85rem;
+      font-size: 0.975rem;
+      font-weight: 700;
+      border-radius: 9999px;
+      cursor: pointer;
+      transition: var(--transition);
+      border: 1px solid transparent;
+      text-align: center;
+      white-space: nowrap;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--red-vibrant) 0%, #d91b33 100%);
+      color: var(--text-pure);
+      box-shadow: 0 6px 24px var(--red-glow);
+    }
+
+    .btn-primary:hover, .btn-primary:focus {
+      background: linear-gradient(135deg, #ff475d 0%, var(--red-vibrant) 100%);
+      transform: translateY(-2px);
+      box-shadow: 0 10px 30px rgba(255, 42, 68, 0.6);
+    }
+
+    .btn-outline {
+      background: rgba(255, 255, 255, 0.04);
+      border-color: rgba(255, 255, 255, 0.2);
+      color: var(--text-soft);
+      backdrop-filter: blur(8px);
+    }
+
+    .btn-outline:hover, .btn-outline:focus {
+      border-color: var(--blue-neon);
+      color: var(--blue-neon);
+      background: rgba(0, 210, 255, 0.08);
+      transform: translateY(-2px);
+      box-shadow: 0 0 20px var(--blue-glow);
+    }
+
+    .btn-card {
+      width: 100%;
+      background: rgba(0, 210, 255, 0.08);
+      border: 1px solid var(--border-blue);
+      color: var(--blue-neon);
+      border-radius: var(--radius-md);
+      padding: 0.9rem 1.25rem;
+    }
+
+    .btn-card:hover, .btn-card:focus {
+      background: var(--blue-neon);
+      color: var(--bg-navy-950);
+      box-shadow: 0 0 22px var(--blue-glow);
+      transform: translateY(-2px);
+    }
+
+    .btn-card-featured {
+      width: 100%;
+      background: var(--red-vibrant);
+      color: var(--text-pure);
+      border-radius: var(--radius-md);
+      padding: 0.9rem 1.25rem;
+      box-shadow: 0 6px 20px var(--red-glow);
+    }
+
+    .btn-card-featured:hover, .btn-card-featured:focus {
+      background: #ff475d;
+      box-shadow: 0 8px 28px rgba(255, 42, 68, 0.6);
+      transform: translateY(-2px);
+    }
+
+    /* Glowing Pulse Heart Animation */
+    .heart-glow-icon {
+      filter: drop-shadow(0 0 8px var(--red-vibrant));
+      animation: heartbeat 2.2s infinite ease-in-out;
+    }
+
+    @keyframes heartbeat {
+      0%, 100% { transform: scale(1); }
+      14% { transform: scale(1.16); }
+      28% { transform: scale(1); }
+      42% { transform: scale(1.12); }
+      70% { transform: scale(1); }
+    }
+
+    /* ==========================================================================
+       Header & Navigation
+       ========================================================================== */
+    .header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(4, 9, 20, 0.9);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--border-glass);
+    }
+
+    .nav-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 80px;
+    }
+
+    .brand-logo {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      font-size: 1.4rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+    }
+
+    .logo-heart-wrap {
+      width: 40px;
+      height: 40px;
+      border-radius: 12px;
+      background: rgba(255, 42, 68, 0.12);
+      border: 1px solid var(--border-red);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .nav-menu {
+      display: flex;
+      align-items: center;
+      gap: 2.25rem;
+      list-style: none;
+    }
+
+    .nav-link {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--text-light);
+      position: relative;
+    }
+
+    .nav-link:hover, .nav-link:focus {
+      color: var(--blue-neon);
+    }
+
+    .mobile-toggle {
+      display: none;
+      background: transparent;
+      border: none;
+      color: var(--text-pure);
+      cursor: pointer;
+      padding: 0.5rem;
+    }
+
+    /* ==========================================================================
+       Hero Section
+       ========================================================================== */
+    .hero {
+      position: relative;
+      padding: 6.5rem 0 5.5rem;
+      overflow: hidden;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 3.5rem;
+      align-items: center;
+    }
+
+    .hero-content h1 {
+      font-size: 3.35rem;
+      font-weight: 800;
+      line-height: 1.15;
+      letter-spacing: -0.03em;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero-content h1 .gradient-text {
+      background: linear-gradient(135deg, var(--text-pure) 30%, var(--blue-neon) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero-description {
+      font-size: 1.15rem;
+      color: var(--text-light);
+      line-height: 1.75;
+      margin-bottom: 2.5rem;
+      max-width: 600px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.15rem;
+      margin-bottom: 2.75rem;
+    }
+
+    .hero-feature-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      border-top: 1px solid var(--border-glass);
+      padding-top: 2rem;
+    }
+
+    .feature-tag-item {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      font-size: 0.875rem;
+      color: var(--text-muted);
+    }
+
+    .feature-tag-item svg {
+      color: var(--blue-neon);
+      flex-shrink: 0;
+    }
+
+    /* Monitor Display Card */
+    .lifesaver-monitor {
+      background: var(--bg-card);
+      border: 1px solid var(--border-blue);
+      border-radius: var(--radius-lg);
+      padding: 1.75rem;
+      box-shadow: var(--shadow-elevation), 0 0 35px rgba(0, 210, 255, 0.12);
+      backdrop-filter: blur(16px);
+      position: relative;
+    }
+
+    .monitor-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid var(--border-glass);
+      padding-bottom: 1rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .monitor-status {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--blue-neon);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .status-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--red-vibrant);
+      box-shadow: 0 0 10px var(--red-vibrant);
+      animation: heartbeat 2s infinite ease-in-out;
+    }
+
+    .ecg-screen-box {
+      background: #02050c;
+      border: 1px solid rgba(0, 210, 255, 0.2);
+      border-radius: var(--radius-md);
+      padding: 1.25rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .ecg-grid-overlay {
+      width: 100%;
+      height: 120px;
+      display: flex;
+      align-items: center;
+    }
+
+    .ecg-path {
+      stroke: var(--blue-neon);
+      stroke-width: 2.5;
+      fill: none;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-dasharray: 900;
+      stroke-dashoffset: 900;
+      animation: flowPulse 3.8s linear infinite;
+      filter: drop-shadow(0 0 6px var(--blue-neon));
+    }
+
+    @keyframes flowPulse {
+      0% { stroke-dashoffset: 900; }
+      100% { stroke-dashoffset: 0; }
+    }
+
+    .monitor-readouts {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+      margin-top: 1.25rem;
+    }
+
+    .readout-cell {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid var(--border-glass);
+      border-radius: var(--radius-sm);
+      padding: 0.85rem 0.5rem;
+      text-align: center;
+    }
+
+    .readout-val {
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: var(--text-pure);
+    }
+
+    .readout-lbl {
+      font-size: 0.725rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      margin-top: 0.25rem;
+    }
+
+    /* ==========================================================================
+       About Us Section
+       ========================================================================== */
+    .about-card-shell {
+      background: var(--bg-card);
+      border: 1px solid var(--border-glass);
+      border-radius: var(--radius-lg);
+      padding: 3.5rem;
+      box-shadow: var(--shadow-elevation);
+      backdrop-filter: blur(14px);
+    }
+
+    .about-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3.5rem;
+      align-items: center;
+    }
+
+    .about-text h3 {
+      font-size: 2rem;
+      font-weight: 800;
+      line-height: 1.3;
+      margin-bottom: 1.5rem;
+    }
+
+    .about-text p {
+      color: var(--text-light);
+      margin-bottom: 1.25rem;
+      font-size: 1.025rem;
+      line-height: 1.75;
+    }
+
+    .about-points-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+      margin-top: 2.25rem;
+    }
+
+    .point-box {
+      background: rgba(4, 9, 20, 0.6);
+      border: 1px solid var(--border-glass);
+      padding: 1.5rem;
+      border-radius: var(--radius-md);
+      transition: var(--transition);
+    }
+
+    .point-box:hover {
+      border-color: var(--blue-neon);
+      transform: translateY(-3px);
+    }
+
+    .point-icon {
+      color: var(--blue-neon);
+      margin-bottom: 0.75rem;
+    }
+
+    .point-box h4 {
+      font-size: 1.05rem;
+      color: var(--text-pure);
+      margin-bottom: 0.35rem;
+    }
+
+    .point-box p {
+      font-size: 0.875rem;
+      color: var(--text-muted);
+      margin-bottom: 0;
+      line-height: 1.55;
+    }
+
+    /* ==========================================================================
+       How It Works Section
+       ========================================================================== */
+    .steps-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+    }
+
+    .step-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-glass);
+      border-radius: var(--radius-lg);
+      padding: 2.5rem 2rem;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      transition: var(--transition);
+      backdrop-filter: blur(12px);
+    }
+
+    .step-card:hover {
+      border-color: var(--border-blue);
+      transform: translateY(-6px);
+      box-shadow: 0 16px 36px rgba(0, 210, 255, 0.15);
+    }
+
+    .step-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1.75rem;
+    }
+
+    .step-digit-badge {
+      width: 48px;
+      height: 48px;
+      border-radius: 16px;
+      background: rgba(255, 42, 68, 0.12);
+      border: 1px solid var(--border-red);
+      color: var(--red-vibrant);
+      font-weight: 800;
+      font-size: 1.35rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 0 14px var(--red-glow);
+    }
+
+    .step-card:nth-child(2) .step-digit-badge {
+      background: rgba(0, 210, 255, 0.12);
+      border-color: var(--border-blue);
+      color: var(--blue-neon);
+      box-shadow: 0 0 14px var(--blue-glow);
+    }
+
+    .step-card:nth-child(3) .step-digit-badge {
+      background: rgba(255, 42, 68, 0.12);
+      border-color: var(--border-red);
+      color: var(--red-vibrant);
+      box-shadow: 0 0 14px var(--red-glow);
+    }
+
+    .step-card h3 {
+      font-size: 1.35rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      color: var(--text-pure);
+    }
+
+    .step-card p {
+      font-size: 0.95rem;
+      color: var(--text-light);
+      line-height: 1.7;
+    }
+
+    /* ==========================================================================
+       CPR Classes Section
+       ========================================================================== */
+    .classes-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2.25rem;
+      align-items: stretch;
+    }
+
+    .course-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-glass);
+      border-radius: var(--radius-lg);
+      padding: 2.75rem 2.25rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+      transition: var(--transition);
+      backdrop-filter: blur(14px);
+    }
+
+    .course-card:hover {
+      border-color: var(--border-blue);
+      transform: translateY(-6px);
+      box-shadow: 0 18px 40px rgba(0, 210, 255, 0.16);
+    }
+
+    .course-card.highlighted {
+      border-color: var(--red-vibrant);
+      box-shadow: 0 0 35px var(--red-glow), var(--shadow-elevation);
+      background: linear-gradient(180deg, rgba(20, 40, 80, 0.9) 0%, rgba(13, 30, 61, 0.95) 100%);
+    }
+
+    .popular-ribbon {
+      position: absolute;
+      top: -13px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--red-vibrant);
+      color: var(--text-pure);
+      font-size: 0.75rem;
+      font-weight: 800;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      padding: 0.3rem 1.1rem;
+      border-radius: 9999px;
+      box-shadow: 0 0 15px var(--red-glow);
+    }
+
+    .course-header-meta {
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: var(--blue-neon);
+      margin-bottom: 0.35rem;
+    }
+
+    .course-card.highlighted .course-header-meta {
+      color: var(--red-soft);
+    }
+
+    .course-headline {
+      font-size: 1.85rem;
+      font-weight: 800;
+      color: var(--text-pure);
+      margin-bottom: 0.75rem;
+    }
+
+    .course-summary {
+      font-size: 0.925rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    .pricing-box {
+      margin: 1.75rem 0;
+      padding: 1.25rem 0;
+      border-top: 1px solid var(--border-glass);
+      border-bottom: 1px solid var(--border-glass);
+    }
+
+    .price-amount {
+      font-size: 2.2rem;
+      font-weight: 800;
+      color: var(--text-pure);
+    }
+
+    .price-footnote {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      margin-top: 0.25rem;
+    }
+
+    .card-feature-list {
+      list-style: none;
+      margin-bottom: 2.25rem;
+      flex-grow: 1;
+    }
+
+    .card-feature-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+      margin-bottom: 0.95rem;
+      font-size: 0.925rem;
+      color: var(--text-light);
+      line-height: 1.5;
+    }
+
+    .card-feature-list li svg {
+      color: var(--blue-neon);
+      flex-shrink: 0;
+      margin-top: 0.15rem;
+    }
+
+    .course-card.highlighted .card-feature-list li svg {
+      color: var(--red-soft);
+    }
+
+    .pricing-disclaimer-callout {
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px dashed rgba(255, 255, 255, 0.15);
+      border-radius: var(--radius-md);
+      padding: 1.25rem 1.75rem;
+      margin-top: 3rem;
+      text-align: center;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    /* ==========================================================================
+       Benefits Section
+       ========================================================================== */
+    .benefits-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+    }
+
+    .benefit-tile {
+      background: var(--bg-card);
+      border: 1px solid var(--border-glass);
+      border-radius: var(--radius-lg);
+      padding: 2.25rem;
+      transition: var(--transition);
+      backdrop-filter: blur(12px);
+    }
+
+    .benefit-tile:hover {
+      border-color: var(--blue-neon);
+      transform: translateY(-4px);
+      box-shadow: 0 12px 30px rgba(0, 210, 255, 0.12);
+    }
+
+    .benefit-icon-wrapper {
+      width: 52px;
+      height: 52px;
+      border-radius: 14px;
+      background: rgba(0, 210, 255, 0.1);
+      border: 1px solid var(--border-blue);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--blue-neon);
+      margin-bottom: 1.35rem;
+    }
+
+    .benefit-tile.red-accent .benefit-icon-wrapper {
+      background: rgba(255, 42, 68, 0.1);
+      border-color: var(--border-red);
+      color: var(--red-vibrant);
+    }
+
+    .benefit-tile h3 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-bottom: 0.75rem;
+      color: var(--text-pure);
+    }
+
+    .benefit-tile p {
+      font-size: 0.925rem;
+      color: var(--text-muted);
+      line-height: 1.65;
+    }
+
+    /* ==========================================================================
+       FAQ Accordion Section
+       ========================================================================== */
+    .faq-wrapper {
+      max-width: 840px;
+      margin: 0 auto;
+    }
+
+    .faq-node {
+      background: var(--bg-card);
+      border: 1px solid var(--border-glass);
+      border-radius: var(--radius-md);
+      margin-bottom: 1.15rem;
+      overflow: hidden;
+      transition: var(--transition);
+    }
+
+    .faq-node:hover {
+      border-color: rgba(255, 255, 255, 0.18);
+    }
+
+    .faq-trigger {
+      width: 100%;
+      text-align: left;
+      background: transparent;
+      border: none;
+      padding: 1.4rem 1.75rem;
+      color: var(--text-pure);
+      font-size: 1.05rem;
+      font-weight: 700;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+      gap: 1rem;
+    }
+
+    .faq-plus {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--border-glass);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      color: var(--blue-neon);
+      font-size: 1.25rem;
+      line-height: 1;
+      transition: transform 0.3s ease, background 0.3s ease;
+    }
+
+    .faq-node.open .faq-plus {
+      transform: rotate(45deg);
+      background: rgba(255, 42, 68, 0.2);
+      border-color: var(--border-red);
+      color: var(--red-vibrant);
+    }
+
+    .faq-content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.35s ease, padding 0.35s ease;
+      padding: 0 1.75rem;
+      color: var(--text-light);
+      font-size: 0.95rem;
+      line-height: 1.7;
+    }
+
+    .faq-node.open .faq-content {
+      max-height: 420px;
+      padding: 0 1.75rem 1.65rem;
+    }
+
+    /* ==========================================================================
+       Call to Action Section
+       ========================================================================== */
+    .cta-glow-box {
+      background: linear-gradient(135deg, #0d1e3d 0%, #040914 100%);
+      border: 1px solid var(--border-blue);
+      border-radius: var(--radius-lg);
+      padding: 4.5rem 2.5rem;
+      text-align: center;
+      box-shadow: 0 0 50px rgba(0, 210, 255, 0.12), var(--shadow-elevation);
+      position: relative;
+    }
+
+    .cta-glow-box h2 {
+      font-size: 2.6rem;
+      font-weight: 800;
+      margin-bottom: 1.25rem;
+      letter-spacing: -0.02em;
+    }
+
+    .cta-glow-box p {
+      font-size: 1.15rem;
+      color: var(--text-light);
+      max-width: 660px;
+      margin: 0 auto 2.5rem;
+      line-height: 1.75;
+    }
+
+    .cta-actions-group {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1.25rem;
+    }
+
+    /* ==========================================================================
+       Footer Section
+       ========================================================================== */
+    .site-footer {
+      background: #02050b;
+      border-top: 1px solid var(--border-glass);
+      padding: 5rem 0 2.5rem;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr 1fr;
+      gap: 3.5rem;
+      margin-bottom: 3.5rem;
+    }
+
+    .footer-company-desc {
+      color: var(--text-muted);
+      font-size: 0.925rem;
+      line-height: 1.7;
+      margin: 1.25rem 0 1.5rem;
+    }
+
+    .footer-column-heading {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--text-pure);
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      margin-bottom: 1.35rem;
+    }
+
+    .footer-link-list {
+      list-style: none;
+    }
+
+    .footer-link-list li {
+      margin-bottom: 0.8rem;
+    }
+
+    .footer-link-list a {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    .footer-link-list a:hover, .footer-link-list a:focus {
+      color: var(--blue-neon);
+    }
+
+    .footer-disclaimer-card {
+      border-top: 1px solid var(--border-glass);
+      padding-top: 2rem;
+      margin-top: 2rem;
+      font-size: 0.825rem;
+      color: #64748b;
+      line-height: 1.7;
+    }
+
+    .footer-bottom-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-top: 1px solid rgba(255, 255, 255, 0.04);
+      padding-top: 2rem;
+      margin-top: 2rem;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    /* ==========================================================================
+       Responsive Media Queries
+       ========================================================================== */
+    @media (max-width: 1024px) {
+      .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+      }
+      .classes-grid,
+      .steps-container,
+      .benefits-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+      .about-layout {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .section-padding {
+        padding: 4rem 0;
+      }
+      .hero-content h1 {
+        font-size: 2.35rem;
+      }
+      .section-title {
+        font-size: 1.85rem;
+      }
+      .classes-grid,
+      .steps-container,
+      .benefits-grid {
+        grid-template-columns: 1fr;
+      }
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+      .about-points-grid {
+        grid-template-columns: 1fr;
+      }
+      .about-card-shell {
+        padding: 2rem 1.5rem;
+      }
+      .mobile-toggle {
+        display: block;
+      }
+      .nav-menu {
+        position: fixed;
+        top: 80px;
+        left: 0;
+        right: 0;
+        background: var(--bg-navy-900);
+        border-bottom: 1px solid var(--border-glass);
+        flex-direction: column;
+        padding: 2rem 1.5rem;
+        gap: 1.5rem;
+        transform: translateY(-130%);
+        transition: transform 0.3s ease;
+      }
+      .nav-menu.open {
+        transform: translateY(0);
+      }
+      .header .btn-primary {
+        display: none;
+      }
+      .footer-bottom-bar {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ==========================================================================
+       1. Header
+       ========================================================================== -->
+  <header class="header">
+    <div class="container nav-container">
+      <a href="#home" class="brand-logo" aria-label="CPR Cart LLC - Return to top">
+        <div class="logo-heart-wrap" aria-hidden="true">
+          <svg class="heart-glow-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--red-vibrant)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+          </svg>
+        </div>
+        <span>CPR Cart <span style="color: var(--blue-neon);">LLC</span></span>
+      </a>
+
+      <nav aria-label="Main Navigation">
+        <ul class="nav-menu" id="nav-list">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About Us</a></li>
+          <li><a href="#classes" class="nav-link">CPR Classes</a></li>
+          <li><a href="#how-it-works" class="nav-link">How It Works</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div style="display: flex; align-items: center; gap: 1rem;">
+        <a href="#classes" class="btn btn-primary">Get Certified</a>
+        <button class="mobile-toggle" id="menu-toggle-btn" aria-label="Toggle Navigation Menu" aria-expanded="false" aria-controls="nav-list">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==========================================================================
+         2. Hero Banner
+         ========================================================================== -->
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="glow-badge">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+            AHA HeartCode® Learning Model
+          </div>
+          <h1>CPR Certification <span class="gradient-text">Made Simple</span></h1>
+          <p class="hero-description">
+            Complete your self-paced online AHA HeartCode® module from home, then finish a quick, approximately 30-minute in-person skills session using an automated CPR Cart/RQI system.
+          </p>
+          <div class="hero-actions">
+            <!-- Single usage of class page URL -->
+            <a href="https://cprcart.com/classes/" class="btn btn-primary">
+              Explore CPR Classes
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="#how-it-works" class="btn btn-outline">Get Started</a>
+          </div>
+          <div class="hero-feature-tags">
+            <div class="feature-tag-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Self-Paced Online Learning</span>
+            </div>
+            <div class="feature-tag-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              <span>~30-Minute Skills Session</span>
+            </div>
+            <div class="feature-tag-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+              <span>Official AHA eCard Eligible</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Healthcare Lifesaver Monitor Visual -->
+        <div class="lifesaver-monitor" aria-label="CPR Assessment Monitor Simulation">
+          <div class="monitor-top">
+            <div class="monitor-status">
+              <span class="status-dot"></span>
+              Automated Skill Feedback
+            </div>
+            <span style="font-size: 0.75rem; color: var(--text-muted); font-weight: 700; text-transform: uppercase;">CPR Cart / RQI</span>
+          </div>
+
+          <div class="ecg-screen-box">
+            <div class="ecg-grid-overlay">
+              <svg viewBox="0 0 500 100" preserveAspectRatio="none" style="width: 100%; height: 100%;">
+                <path class="ecg-path" d="M0,50 L75,50 L90,50 L100,18 L110,82 L120,10 L130,62 L140,50 L210,50 L225,50 L235,18 L245,82 L255,10 L265,62 L275,50 L345,50 L360,50 L370,18 L380,82 L390,10 L400,62 L410,50 L500,50"/>
+              </svg>
+            </div>
+          </div>
+
+          <div class="monitor-readouts">
+            <div class="readout-cell">
+              <div class="readout-val" style="color: var(--blue-neon);">100–120</div>
+              <div class="readout-lbl">Rate / Min Target</div>
+            </div>
+            <div class="readout-cell">
+              <div class="readout-val" style="color: var(--blue-neon);">2.0–2.4"</div>
+              <div class="readout-lbl">Depth Target</div>
+            </div>
+            <div class="readout-cell">
+              <div class="readout-val" style="color: var(--red-soft);">~30 Min</div>
+              <div class="readout-lbl">Skills Check</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         3. About Us
+         ========================================================================== -->
+    <section class="section-padding" id="about">
+      <div class="container">
+        <div class="about-card-shell">
+          <div class="about-layout">
+            <div class="about-text">
+              <div class="glow-badge">About CPR Cart LLC</div>
+              <h3>Modern, Convenient Certification for Healthcare Professionals</h3>
+              <p>
+                CPR Cart LLC provides a convenient approach to CPR certification and renewal through the AHA HeartCode® model.
+              </p>
+              <p>
+                Online learning can be completed from home at your own schedule. Once the digital coursework is completed, learners attend an approximately 30-minute in-person skills session using an automated CPR Cart/RQI station.
+              </p>
+              <p>
+                The process is designed for convenience and flexibility. Users may receive an official AHA eCard when course requirements are completed, based on the selected course and applicable requirements. CPR Cart supports learners seeking BLS, ACLS, and PALS certification or renewal.
+              </p>
+            </div>
+
+            <div class="about-points-grid">
+              <div class="point-box">
+                <div class="point-icon">
+                  <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                </div>
+                <h4>Learn From Home</h4>
+                <p>Complete self-paced HeartCode® coursework online whenever your schedule permits.</p>
+              </div>
+
+              <div class="point-box">
+                <div class="point-icon">
+                  <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                </div>
+                <h4>~30-Minute Check</h4>
+                <p>Fast, automated skills session equipped with instant audio and visual guidance.</p>
+              </div>
+
+              <div class="point-box">
+                <div class="point-icon">
+                  <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                </div>
+                <h4>Official AHA eCard</h4>
+                <p>Earn an authentic American Heart Association eCard upon completing all requirements.</p>
+              </div>
+
+              <div class="point-box">
+                <div class="point-icon">
+                  <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+                </div>
+                <h4>BLS, ACLS &amp; PALS</h4>
+                <p>Comprehensive credential options meeting standard healthcare compliance guidelines.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         4. How It Works
+         ========================================================================== -->
+    <section class="section-padding" id="how-it-works" style="background: rgba(7, 17, 38, 0.4);">
+      <div class="container">
+        <div class="section-header">
+          <div class="glow-badge blue">Three-Step Process</div>
+          <h2 class="section-title">How It Works</h2>
+          <p class="section-subtitle">
+            Attain or renew your credentials efficiently through the structured AHA HeartCode® blended model.
+          </p>
+        </div>
+
+        <div class="steps-container">
+          <!-- Step 1 -->
+          <div class="step-card">
+            <div class="step-top">
+              <div class="step-digit-badge">1</div>
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--text-muted)" stroke-width="1.8"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            </div>
+            <h3>Choose Your CPR Course</h3>
+            <p>
+              Select your required American Heart Association discipline: Basic Life Support (BLS), Advanced Cardiovascular Life Support (ACLS), or Pediatric Advanced Life Support (PALS).
+            </p>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="step-card">
+            <div class="step-top">
+              <div class="step-digit-badge">2</div>
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--text-muted)" stroke-width="1.8"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            </div>
+            <h3>Complete Online AHA HeartCode® Module</h3>
+            <p>
+              Engage with interactive case studies, dynamic cognitive assessments, and resuscitation science from home at your own pace before attending your skills evaluation.
+            </p>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="step-card">
+            <div class="step-top">
+              <div class="step-digit-badge">3</div>
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--text-muted)" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <h3>Complete ~30-Minute Skills Session</h3>
+            <p>
+              Attend an automated CPR Cart/RQI station to complete your hands-on evaluation with voice and visual prompts that measure compression depth, recoil, rate, and ventilations.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         5. CPR Classes
+         ========================================================================== -->
+    <section class="section-padding" id="classes">
+      <div class="container">
+        <div class="section-header">
+          <div class="glow-badge">Course Offerings</div>
+          <h2 class="section-title">CPR Certification &amp; Renewal Classes</h2>
+          <p class="section-subtitle">
+            Blended learning programs combining official AHA HeartCode® cognitive training with automated skills evaluations.
+          </p>
+        </div>
+
+        <div class="classes-grid">
+          <!-- BLS Course Card -->
+          <article class="course-card highlighted" id="bls-card">
+            <div class="popular-ribbon">Most Requested</div>
+            <div>
+              <div class="course-header-meta">AHA Provider Course</div>
+              <h3 class="course-headline">BLS Provider</h3>
+              <p class="course-summary">
+                Basic Life Support designed for healthcare professionals, nursing personnel, emergency responders, and clinical teams.
+              </p>
+            </div>
+
+            <div class="pricing-box">
+              <div class="price-amount">$90 – $120</div>
+              <div class="price-footnote">Pricing varies by location and package options</div>
+            </div>
+
+            <ul class="card-feature-list">
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Online HeartCode® BLS module completed at your pace</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Approximately 30-minute automated skills session</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>AHA BLS Provider eCard issued upon successful completion</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Eligible for Continuing Education Units (CEUs) where applicable</span>
+              </li>
+            </ul>
+
+            <!-- Single usage of BLS course URL -->
+            <a href="https://cprcart.com/classes/bls/" class="btn btn-card-featured">Get Started with BLS</a>
+          </article>
+
+          <!-- ACLS Course Card -->
+          <article class="course-card" id="acls-card">
+            <div>
+              <div class="course-header-meta">AHA Provider Course</div>
+              <h3 class="course-headline">ACLS Provider</h3>
+              <p class="course-summary">
+                Advanced Cardiovascular Life Support for personnel directing or participating in cardiopulmonary emergencies.
+              </p>
+            </div>
+
+            <div class="pricing-box">
+              <div class="price-amount">$150 – $265</div>
+              <div class="price-footnote">Pricing varies by location and package options</div>
+            </div>
+
+            <ul class="card-feature-list">
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Online HeartCode® ACLS module completed from home</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Approximately 30-minute automated skills session</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>AHA ACLS Provider eCard issued upon successful completion</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Eligible for Continuing Education Units (CEUs) where applicable</span>
+              </li>
+            </ul>
+
+            <!-- Single usage of ACLS course URL -->
+            <a href="https://cprcart.com/classes/acls/" class="btn btn-card">Get Started with ACLS</a>
+          </article>
+
+          <!-- PALS Course Card -->
+          <article class="course-card" id="pals-card">
+            <div>
+              <div class="course-header-meta">AHA Provider Course</div>
+              <h3 class="course-headline">PALS Provider</h3>
+              <p class="course-summary">
+                Pediatric Advanced Life Support focused on comprehensive assessment and resuscitation of pediatric patients.
+              </p>
+            </div>
+
+            <div class="pricing-box">
+              <div class="price-amount">$150 – $265</div>
+              <div class="price-footnote">Pricing varies by location and package options</div>
+            </div>
+
+            <ul class="card-feature-list">
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Online HeartCode® PALS module completed from home</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Approximately 30-minute automated skills session</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>AHA PALS Provider eCard issued upon successful completion</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Eligible for Continuing Education Units (CEUs) where applicable</span>
+              </li>
+            </ul>
+
+            <!-- Single usage of PALS course URL -->
+            <a href="https://cprcart.com/classes/pals/" class="btn btn-card">Get Started with PALS</a>
+          </article>
+        </div>
+
+        <div class="pricing-disclaimer-callout">
+          <p>
+            <strong>Please Note:</strong> Prices and course availability may vary and should be confirmed before purchase. Always verify course acceptance with your employer, school, licensing board, or organization.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         6. Benefits Section
+         ========================================================================== -->
+    <section class="section-padding" id="benefits" style="background: rgba(7, 17, 38, 0.5);">
+      <div class="container">
+        <div class="section-header">
+          <div class="glow-badge">Key Advantages</div>
+          <h2 class="section-title">Designed for Modern Resuscitation Learning</h2>
+          <p class="section-subtitle">
+            A flexible pathway built to accommodate demanding clinical rotations and work schedules.
+          </p>
+        </div>
+
+        <div class="benefits-grid">
+          <div class="benefit-tile">
+            <div class="benefit-icon-wrapper">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            </div>
+            <h3>Online at Your Convenience</h3>
+            <p>Work through the online didactic module at home, pausing and resuming whenever your schedule permits.</p>
+          </div>
+
+          <div class="benefit-tile">
+            <div class="benefit-icon-wrapper">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <h3>Quick Skills Session</h3>
+            <p>The hands-on skills session takes approximately 30 minutes, respecting your valuable time.</p>
+          </div>
+
+          <div class="benefit-tile">
+            <div class="benefit-icon-wrapper">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            </div>
+            <h3>Flexible Scheduling</h3>
+            <p>Select an appointment slot at an automated CPR Cart location that aligns with your availability.</p>
+          </div>
+
+          <div class="benefit-tile red-accent">
+            <div class="benefit-icon-wrapper">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+            </div>
+            <h3>Automated Precision</h3>
+            <p>CPR Cart/RQI technology provides objective biometric feedback on compression rate, recoil, and ventilation volume.</p>
+          </div>
+
+          <div class="benefit-tile red-accent">
+            <div class="benefit-icon-wrapper">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M7 15h0M2 9.5h20"/></svg>
+            </div>
+            <h3>Convenient Certification &amp; Renewal</h3>
+            <p>Streamlined structure created specifically to avoid day-long lectures while maintaining rigorous AHA scientific standards.</p>
+          </div>
+
+          <div class="benefit-tile red-accent">
+            <div class="benefit-icon-wrapper">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+            </div>
+            <h3>Instant AHA eCard</h3>
+            <p>Where applicable, an official AHA eCard is issued directly after successful completion of all course requirements.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         7. FAQ Section
+         ========================================================================== -->
+    <section class="section-padding" id="faq">
+      <div class="container">
+        <div class="section-header">
+          <div class="glow-badge blue">Questions &amp; Answers</div>
+          <h2 class="section-title">Frequently Asked Questions</h2>
+          <p class="section-subtitle">
+            Find answers to common questions regarding the AHA HeartCode® model and CPR Cart certification.
+          </p>
+        </div>
+
+        <div class="faq-wrapper">
+          <!-- FAQ 1 -->
+          <div class="faq-node">
+            <button class="faq-trigger" aria-expanded="false">
+              <span>What is the AHA HeartCode® learning model?</span>
+              <span class="faq-plus" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-content">
+              <p>The AHA HeartCode® learning model is the American Heart Association's blended training method. It combines self-directed online learning completed by the student with a quick, approximately 30-minute in-person hands-on skills session using an automated CPR Cart/RQI system.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="faq-node">
+            <button class="faq-trigger" aria-expanded="false">
+              <span>How does the online learning portion work?</span>
+              <span class="faq-content-inner"></span>
+              <span class="faq-plus" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-content">
+              <p>Once registered, you access your online HeartCode® module from home or any computer with an internet connection. The digital module covers cognitive scenarios, case evaluations, and resuscitation guidelines at your own pace before your hands-on check.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="faq-node">
+            <button class="faq-trigger" aria-expanded="false">
+              <span>How long is the skills session?</span>
+              <span class="faq-plus" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-content">
+              <p>The hands-on skills session on the automated CPR Cart/RQI system lasts approximately 30 minutes. The system provides real-time audiovisual feedback to evaluate compression depth, speed, recoil, and ventilation effectiveness.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 4 -->
+          <div class="faq-node">
+            <button class="faq-trigger" aria-expanded="false">
+              <span>Which CPR classes are available?</span>
+              <span class="faq-plus" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-content">
+              <p>CPR Cart LLC supports American Heart Association courses including Basic Life Support (BLS), Advanced Cardiovascular Life Support (ACLS), and Pediatric Advanced Life Support (PALS) for both initial certification and renewal.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 5 -->
+          <div class="faq-node">
+            <button class="faq-trigger" aria-expanded="false">
+              <span>Will I receive an AHA eCard?</span>
+              <span class="faq-plus" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-content">
+              <p>Yes. Upon successful completion of both the online AHA HeartCode® module and the automated skills session, you will receive an official American Heart Association eCard based on the selected course and applicable requirements.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 6 -->
+          <div class="faq-node">
+            <button class="faq-trigger" aria-expanded="false">
+              <span>Is CPR Cart traditional classroom training?</span>
+              <span class="faq-plus" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-content">
+              <p>No. CPR Cart LLC does not provide traditional classroom training. CPR Cart LLC does not provide instructors. Training is completed using the AHA HeartCode® model with independent online coursework and an automated CPR Cart/RQI station.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 7 -->
+          <div class="faq-node">
+            <button class="faq-trigger" aria-expanded="false">
+              <span>How can I confirm whether a course meets my employer’s requirements?</span>
+              <span class="faq-plus" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-content">
+              <p>Before purchasing, check with your employer, school, licensing body, or credentialing department to verify that an American Heart Association HeartCode® blended learning course meets their specific organizational guidelines.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 8 -->
+          <div class="faq-node">
+            <button class="faq-trigger" aria-expanded="false">
+              <span>Can I complete the course from home?</span>
+              <span class="faq-plus" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-content">
+              <p>You can complete the online AHA HeartCode® learning portion from home on your own computer. However, to complete your certification, you must attend an approximately 30-minute in-person skills session at an automated CPR Cart station.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         8. Call to Action Section
+         ========================================================================== -->
+    <section class="section-padding" id="contact">
+      <div class="container">
+        <div class="cta-glow-box">
+          <div class="glow-badge" style="margin-bottom: 1.5rem;">Take the Next Step</div>
+          <h2>Ready to Begin Your CPR Certification?</h2>
+          <p>
+            Select your AHA course, start your online HeartCode® learning module at home, and schedule your approximately 30-minute skills check on an automated CPR Cart station.
+          </p>
+          <div class="cta-actions-group">
+            <a href="#classes" class="btn btn-primary">Select a CPR Course</a>
+            <a href="tel:8885287805" class="btn btn-outline">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              Call 888-528-7805
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       9. Footer
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="brand-logo">
+            <div class="logo-heart-wrap" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--red-vibrant)" stroke-width="2.2">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+              </svg>
+            </div>
+            <span>CPR Cart <span style="color: var(--blue-neon);">LLC</span></span>
+          </div>
+          <p class="footer-company-desc">
+            CPR Cart LLC delivers accessible American Heart Association certification and renewal using the blended AHA HeartCode® model, combining self-paced online modules with automated hands-on skills evaluations.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-column-heading">Navigation</h4>
+          <ul class="footer-link-list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#classes">CPR Classes</a></li>
+            <li><a href="#how-it-works">How It Works</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-column-heading">Courses</h4>
+          <ul class="footer-link-list">
+            <li><a href="#bls-card">HeartCode® BLS</a></li>
+            <li><a href="#acls-card">HeartCode® ACLS</a></li>
+            <li><a href="#pals-card">HeartCode® PALS</a></li>
+            <li><a href="#benefits">Skills Session Info</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-column-heading">Official Support</h4>
+          <ul class="footer-link-list">
+            <li><a href="tel:8885287805">888-528-7805</a></li>
+            <!-- Single usage of homepage URL -->
+            <li><a href="https://cprcart.com/" target="_blank" rel="noopener noreferrer">cprcart.com</a></li>
+            <li><a href="mailto:support@cprcart.com">support@cprcart.com</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-disclaimer-card">
+        <p>
+          <strong>Disclaimer:</strong> HeartCode® is a registered trademark of the American Heart Association. CPR Cart LLC uses the AHA HeartCode® blended model and does not provide traditional classroom training. CPR Cart LLC does not provide instructors. Official AHA eCards are issued based on the selected course and applicable requirements upon successful completion of all coursework and automated skills evaluations. Course pricing, package details, and station availability may vary and should be confirmed before purchase. Users should verify course requirements with their employer, school, licensing body, or organization when applicable.
+        </p>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <div>&copy; 2026 CPR Cart LLC. All rights reserved.</div>
+        <div>AHA HeartCode® Blended CPR Certification</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       JavaScript Logic
+       ========================================================================== -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // 1. Mobile Navigation Toggle
+      const toggleBtn = document.getElementById('menu-toggle-btn');
+      const navList = document.getElementById('nav-list');
+
+      if (toggleBtn && navList) {
+        toggleBtn.addEventListener('click', function () {
+          const isOpen = navList.classList.toggle('open');
+          toggleBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+        });
+
+        // Close mobile drawer when link clicked
+        navList.querySelectorAll('a').forEach(function (link) {
+          link.addEventListener('click', function () {
+            navList.classList.remove('open');
+            toggleBtn.setAttribute('aria-expanded', 'false');
+          });
+        });
+      }
+
+      // 2. FAQ Accordion Single-Expand
+      const faqNodes = document.querySelectorAll('.faq-node');
+
+      faqNodes.forEach(function (node) {
+        const trigger = node.querySelector('.faq-trigger');
+
+        trigger.addEventListener('click', function () {
+          const isCurrentOpen = node.classList.contains('open');
+
+          // Close all nodes
+          faqNodes.forEach(function (otherNode) {
+            otherNode.classList.remove('open');
+            const otherBtn = otherNode.querySelector('.faq-trigger');
+            if (otherBtn) {
+              otherBtn.setAttribute('aria-expanded', 'false');
+            }
+          });
+
+          // Toggle active if it wasn't open
+          if (!isCurrentOpen) {
+            node.classList.add('open');
+            trigger.setAttribute('aria-expanded', 'true');
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
